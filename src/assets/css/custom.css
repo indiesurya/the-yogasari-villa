@@ -145,6 +145,16 @@ body{
     border-bottom: 3px solid var(--orange-color);
     font-weight: 700;
 }
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    color: var(--orange-color);
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after{
+    color: var(--orange-color);
+}
 @media only screen and (min-width: 922px) {
     .navbar-expand-lg .offcanvas .offcanvas-body {
             display: flex;
