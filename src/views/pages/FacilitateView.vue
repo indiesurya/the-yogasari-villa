@@ -4,34 +4,12 @@
     <div class="title text-center">
       <h2 class="display-3">Facilities</h2>
     </div>
-    <div class="row justify-content-center">
-      <div
-        class="col-md-2 bg-grey mx-1 text-center align-items-center"
-        style="height: 155px; weight: 175px"
-      >
-        <h1><i class="bi bi-wifi text-orange fw-bold" style="font-size:2em;"></i></h1>
-        <h6 class="fw-bold">Wifi</h6>
-      </div>
-      <div
-        class="col-md-2 bg-grey mx-1 text-center align-items-center"
-        style="height: 155px; weight: 175px"
-      >
-        <h1><i class="bi bi-wifi text-orange fw-bold" style="font-size:2em;"></i></h1>
-        <h6 class="fw-bold">Wifi</h6>
-      </div>
-     <div
-        class="col-md-2 bg-grey mx-1 text-center align-items-center"
-        style="height: 155px; weight: 175px"
-      >
-        <h1><i class="bi bi-wifi text-orange fw-bold" style="font-size:2em;"></i></h1>
-        <h6 class="fw-bold">Wifi</h6>
-      </div>
-      <div
-        class="col-md-2 bg-grey mx-1 text-center align-items-center"
-        style="height: 155px; weight: 175px"
-      >
-        <h1><i class="bi bi-wifi text-orange fw-bold" style="font-size:2em;"></i></h1>
-        <h6 class="fw-bold">Wifi</h6>
+    <div class="row justify-content-center image">
+      <div class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center" v-for="(facilitate, index) in facilities" v-bind:key="index">
+        <h1>
+          <i :class=facilitate.icon class="text-orange fw-bold" style="font-size: 2em"></i>
+        </h1>
+        <h6 class="fw-bold">{{facilitate.name}}</h6>
       </div>
     </div>
 
@@ -68,8 +46,14 @@
         class="mySwiper"
       >
         <swiper-slide v-for="(image, index) in images" v-bind:key="index">
-          <div class="card mx-auto" style="width: 18rem">
+          <div class="card mx-auto position-relative" style="width: 18rem">
             <img :src="image.url" alt="" class="img-fluid" />
+            <div
+              class="title-picture position-absolute"
+              style="background-color: #ffffff99; padding: 10px; bottom: 0"
+            >
+              <span class="fw-bold">{{image.name}}</span>
+            </div>
           </div>
         </swiper-slide>
       </swiper>
@@ -103,6 +87,24 @@ export default {
   components: { MainNavbar, Footer, Swiper, SwiperSlide, VideoPlayer },
   data() {
     return {
+      facilities: [
+        {
+          name: 'Room',
+          icon: 'bi bi-wifi'
+        },
+        {
+          name: 'Room',
+          icon: 'bi bi-wifi'
+        },
+        {
+          name: 'Swimming Pool',
+          icon: 'bi bi-wifi'
+        },
+        {
+          name: 'Wifi',
+          icon: 'bi bi-wifi'
+        }
+      ],
       swiperOptions: {
         breakpoints: {
           // when window width is >= 320px
@@ -126,30 +128,39 @@ export default {
       images: [
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
         {
           url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          name: "Judul Foto"
         },
       ],
     };
