@@ -6,42 +6,27 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="location d-flex">
-            <h1><i class="bi bi-geo-alt text-orange"></i></h1>
+          <div class="location d-flex align-items-center">
+            <h1><i class="bi bi-geo-alt text-orange align-middle" style="vertical-align:middle;"></i></h1>
             <div class="detail-location mx-2">
               <li class="list-group-item fw-500">
-                Jl. Dewi Saraswati III Blk. II No.9, Seminyak, Kec.Kuta,
-                Kabupaten Badung, Bali 80361
+                Jl. Raya Andong No. 23
               </li>
             </div>
           </div>
-          <div class="email d-flex">
-            <h1><i class="bi bi-envelope text-orange"></i></h1>
-            <div class="detail-location mx-2 position-relative">
-              <li
-                class="list-group-item fw-500"
-                style="
-                  top: 35%;
-                  transform: translateY(-50%);
-                  position: absolute;
-                "
-              >
-                theyogasariseminyak01@gmail.com
+          <div class="location d-flex align-items-center">
+            <h1><i class="bi bi-envelope text-orange align-middle" style="vertical-align:middle;"></i></h1>
+            <div class="detail-location mx-2">
+              <li class="list-group-item fw-500">
+                adiguna74@gmail.com
               </li>
             </div>
           </div>
-          <div class="phone d-flex">
-            <h1><i class="bi bi-telephone text-orange"></i></h1>
-            <div class="detail-location mx-2 position-relative">
-              <li
-                class="list-group-item fw-500"
-                style="
-                  top: 35%;
-                  transform: translateY(-50%);
-                  position: absolute;
-                "
-              >
-                081339782421
+          <div class="location d-flex align-items-center">
+            <h1><i class="bi bi-telephone text-orange align-middle" style="vertical-align:middle;"></i></h1>
+            <div class="detail-location mx-2">
+              <li class="list-group-item fw-500">
+                 +62 819 9966 0040
               </li>
             </div>
           </div>
@@ -73,11 +58,11 @@
               placeholder="Your Message"
             ></textarea>
           </div>
-          <input type="submit" value="Send" class="btn btn-contact float-end" />
+          <button class="btn btn-contact float-end">Send <i class="fas fa-paper-plane"></i></button>
         </div>
       </div>
       <div class="row mb-5">
-        <h2 class="display-4">Picture</h2>
+        <h2 class="display-4">Location</h2>
         <iframe
           width="600"
           height="500"

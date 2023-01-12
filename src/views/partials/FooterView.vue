@@ -3,26 +3,24 @@
     <div class="container mt-5 pb-5">
         <div class="row">
             <div class="col-md-3 text-center mb-3">
-                <img src="../../assets/img/logo.JPG" alt="" class="img-fluid float-center text-center" width="200">
+                <img src="../../assets/img/logo.png" alt="" class="img-fluid float-center text-center" width="200">
             </div>
             <div class="col-md-6 footer-contact">
                 <h3 class="text-orange text-uppercase mb-4">Contact</h3>
-                <div class="whatsapp d-flex mb-2">
+                <div class="whatsapp d-flex mb-2 align-items-center">
                     <div class="icon-whatsapp">
-                        <h1><i class="bi bi-whatsapp text-orange"></i></h1>
+                        <h1><i class="bi bi-whatsapp text-orange align-middle" style="vertical-align: middle;"></i></h1>
                     </div>
                     <div class="detail-whatsapp mx-2">
                         <li class="list-group-item fw-500">+62 8133 9782 421</li>
-                        <li class="list-group-item fw-500">PHONE NUMBER</li>
                     </div>
                 </div>
-                <div class="email d-flex">
+                <div class="email d-flex align-items-center">
                     <div class="icon-email">
                         <h1><i class="bi bi-envelope text-orange"></i></h1>
                     </div>
                     <div class="detail-email mx-2">
                         <li class="list-group-item fw-500">theyogasariseminyak01@gmail.com</li>
-                        <li class="list-group-item fw-500">EMAIL</li>
                     </div>
                 </div>
             </div>

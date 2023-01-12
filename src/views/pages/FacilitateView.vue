@@ -5,38 +5,45 @@
         <h2 class="display-3">Facilities</h2>
       </div>
       <div class="row justify-content-center image">
-        <div
-          class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center"
-          v-for="(facilitate, index) in facilities"
-          v-bind:key="index"
-        >
-          <h1>
-            <i
-              :class="facilitate.icon"
-              class="text-orange fw-bold"
-              style="font-size: 2em"
-            ></i>
-          </h1>
-          <h6 class="fw-bold">{{ facilitate.name }}</h6>
+        <div class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center p-3">
+          <h1><i class="fas fa-bath text-orange"></i></h1>
+          <h6 class="fw-bold">Room</h6>
+        </div>
+        <div class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center p-3">
+          <h1><i class="fas fa-bed text-orange"></i></h1>
+          <h6 class="fw-bold">Room</h6>
+        </div>
+        <div class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center p-3">
+          <h1><i class='fas fa-swimming-pool text-orange '></i></h1>
+          <h6 class="fw-bold">Swimming Pool</h6>
+        </div>
+        <div class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center p-3">
+          <h1><i class='fas fa-wifi text-orange'></i></h1>
+          <h6 class="fw-bold">Wifi</h6>
         </div>
       </div>
+      
 
       <!-- Picture -->
       <div class="picture">
         <h2 class="display-4">Picture</h2>
         <div class="row pl-1">
           <div
-            class="col-md-4 image p-0"
+            class="col-md-4 image mb-4"
             v-for="(image, index) in images"
             v-bind:key="index"
           >
             <img
-              src="https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+              v-bind:src="'../../src/assets/img/view/' + image.url"
               class="img-fluid"
               alt=""
-              style="width: 100%"
+              style="width: 100%; border-radius:10px;"
             />
           </div>
+          <div class="show-more-button d-flex justify-content-center">
+            <button @click="showmore()" class="btn btn-green"><span v-html="show"></span> <i class="ml-2" :class="icon"></i> </button>
+          </div>
+          
         </div>
       </div>
 
@@ -55,7 +62,7 @@
         >
           <swiper-slide v-for="(image, index) in images" v-bind:key="index">
             <div class="card mx-auto position-relative" style="width: 18rem">
-              <img :src="image.url" alt="" class="img-fluid" />
+              <img :src="'../../src/assets/img/view/' + image.url" alt="" class="img-fluid" style="border-radius: 10px;" />
               <div
                 class="title-picture position-absolute"
                 style="background-color: #ffffff99; padding: 10px; bottom: 0"
@@ -93,24 +100,6 @@ export default {
   components: { MainNavbar, Footer, Swiper, SwiperSlide, VideoPlayer },
   data() {
     return {
-      facilities: [
-        {
-          name: "Room",
-          icon: "bi bi-wifi",
-        },
-        {
-          name: "Room",
-          icon: "bi bi-wifi",
-        },
-        {
-          name: "Swimming Pool",
-          icon: "bi bi-wifi",
-        },
-        {
-          name: "Wifi",
-          icon: "bi bi-wifi",
-        },
-      ],
       swiperOptions: {
         breakpoints: {
           // when window width is >= 320px
@@ -133,42 +122,39 @@ export default {
       },
       images: [
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "1.JPG",
           name: "Judul Foto",
         },
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "2.JPG",
           name: "Judul Foto",
         },
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "3.JPG",
           name: "Judul Foto",
         },
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "4.JPG",
           name: "Judul Foto",
         },
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "5.JPG",
           name: "Judul Foto",
         },
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "6.JPG",
           name: "Judul Foto",
         },
         {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+          url: "7.JPG",
           name: "Judul Foto",
-        },
-        {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-          name: "Judul Foto",
-        },
-        {
-          url: "https://images.unsplash.com/photo-1596360576228-ee4970148b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-          name: "Judul Foto",
-        },
+        }
       ],
+      temp : [],
+      counter: 0,
+      show: "Show More",
+      icon: "fas fa-caret-square-down"
+
     };
   },
   setup() {
@@ -179,12 +165,35 @@ export default {
         controls: true,
         sources: [
           {
-            src: "/src/assets/video/1.mp4",
+            src: "/src/assets/video/Andong Village.mp4",
             type: "video/mp4",
           },
         ],
       },
     };
+  },
+  
+  mounted(){
+    let indie = this.images.slice(0,6);
+    this.temp = this.images;
+    this.images = indie;
+    console.log(this.show);
+  },
+  methods: {
+    showmore(){
+      if(this.counter % 2 == 0){
+        this.images = this.temp;
+        this.icon = "fas fa-caret-square-down",
+        this.show = "Show More"
+      }else{
+        let indie = this.images.slice(0,6);
+        this.images = indie;
+        this.icon = "fas fa-caret-square-up",
+        this.show = "Less More"
+        console.log(this.show);
+      }
+      this.counter++;
+    }
   },
 };
 </script>

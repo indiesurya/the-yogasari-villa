@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">The Yogasari Villa</a>
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/img/logo.png" alt="Bootstrap" width="60" height="60">
+        Andong Village</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,9 +21,6 @@
                 <router-link class="nav-link" aria-current="page" to="/facilities">Facilities</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" to="/review">Review</router-link>
-            </li>
-            <li class="nav-item">
                 <router-link class="nav-link" to="/contact">Contact Us</router-link>
             </li>
             </ul>
@@ -33,7 +32,7 @@
 
 <script>
 export default {
-    props: ['activeNavbar']
-}
+  props: ["activeNavbar"],
+};
 </script>
 

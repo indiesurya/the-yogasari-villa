@@ -1,4 +1,6 @@
 # Logs
+/src/assets/img
+/src/assets/video
 logs
 *.log
 npm-debug.log*
