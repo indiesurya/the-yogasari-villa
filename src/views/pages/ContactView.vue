@@ -7,23 +7,23 @@
       <div class="row">
         <div class="col-md-4">
           <div class="location d-flex align-items-center">
-            <h1><i class="bi bi-geo-alt text-orange align-middle" style="vertical-align:middle;"></i></h1>
+            <h1><img src="../../assets/img/icon/location.svg" alt=""></h1>
             <div class="detail-location mx-2">
               <li class="list-group-item fw-500">
                 Jl. Raya Andong No. 23
               </li>
             </div>
           </div>
-          <div class="location d-flex align-items-center">
-            <h1><i class="bi bi-envelope text-orange align-middle" style="vertical-align:middle;"></i></h1>
+          <div class="location d-flex align-items-center mt-3">
+            <h1><img src="../../assets/img/icon/email1.svg" alt=""></h1>
             <div class="detail-location mx-2">
               <li class="list-group-item fw-500">
                 adiguna74@gmail.com
               </li>
             </div>
           </div>
-          <div class="location d-flex align-items-center">
-            <h1><i class="bi bi-telephone text-orange align-middle" style="vertical-align:middle;"></i></h1>
+          <div class="location d-flex align-items-center mt-3">
+            <h1><img src="../../assets/img/icon/tlp.svg" alt=""></h1>
             <div class="detail-location mx-2">
               <li class="list-group-item fw-500">
                  +62 819 9966 0040

@@ -35,7 +35,7 @@ body{
     font-weight: 600;
     font-size: 48px;
     line-height: 75px;
-    color: var(--black-color);
+    color: var(--orange-color);
 }
 
 .display-3{
@@ -77,8 +77,10 @@ body{
 }
 
 .rounded-green{
-    background-color: var(--green-color);
+    background-color: var(--orange-color);
     border-radius: 50%;
+    color: white;
+    -webkit-text-stroke: 2px white  ;
 }
 
 .more-info:hover{
@@ -123,18 +125,24 @@ body{
 }
 
 .form-control{
-    background-color: var(--orange-color);
-    color: white !important;
+    background-color: white;
+
+    color: var(--orange-color) !important;
+    border: 1px solid var(--orange-color);
 }
 
 .form-control::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #FFFFFF99 !important;
+    color: var(--orange-color) !important;
     opacity: 1;
     /* Firefox */
 }
 .form-control:focus {
     color: var(--orange-color) !important;
+}
+
+textarea {
+    height: 250px;
 }
 
 .video-js{
@@ -169,11 +177,6 @@ body{
     color: var(--orange-color);
 }
 
-.router-link-active {
-    border-bottom: 3px solid var(--orange-color);
-        font-weight: 700;
-}
-
 .bi-whatsapp::before{
     vertical-align: middle;
     padding-top: 5px;
@@ -184,11 +187,20 @@ body{
         padding-top: 5px;
 }
 
+.nav-link{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .navbar{
     z-index: 100000;
 }
 .fa-swimming-pool::before{
     content: "\f5c5";
+}
+
+.router-link-active{
+    border-bottom: 3px solid var(--orange-color) !important;
 }
         
 .backlight{
@@ -204,6 +216,8 @@ body{
 .btn-green{
     background-color: var(--orange-color);
     color: white;
+    border-radius: 24px;
+    font-size: 25px;
 }
 
 .btn-green:hover {
@@ -243,16 +257,19 @@ body{
 
     .display-4{
         font-size: 25px;
+        color: var(--orange-color);
     }
 
     .display-3{
         font-size: 25px;
+        color: var(--orange-color);
     }
 
     .display-5{
         font-size: 25px;
         margin: 0;
         padding: 0;
+        color: var(--orange-color);
     }
 
     .title {
@@ -263,4 +280,22 @@ body{
 
 @media only screen and (min-width: 768px) {
 
+}
+.about-slider
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next{
+    left: 8%;
+        right: auto;
+}
+       
+.about-slider
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev{
+    right: 8%;
+        left: auto;
+}
+
+.card{
+    border-radius: 50%;
+    width: 80% !important;
 }

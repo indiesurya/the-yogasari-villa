@@ -6,18 +6,19 @@
                 <img src="../../assets/img/logo.png" alt="" class="img-fluid float-center text-center" width="200">
             </div>
             <div class="col-md-6 footer-contact">
-                <h3 class="text-orange text-uppercase mb-4">Contact</h3>
+                <h2 class="text-orange text-uppercase mb-4 fw-bold" style="">Contact</h2>
                 <div class="whatsapp d-flex mb-2 align-items-center">
                     <div class="icon-whatsapp">
-                        <h1><i class="bi bi-whatsapp text-orange align-middle" style="vertical-align: middle;"></i></h1>
+                        <img src="../../assets/img/icon/wa.svg" alt="">
+                        <!-- <h1><i class="bi bi-whatsapp text-orange align-middle" style="vertical-align: middle;"></i></h1> -->
                     </div>
                     <div class="detail-whatsapp mx-2">
                         <li class="list-group-item fw-500">+62 8133 9782 421</li>
                     </div>
                 </div>
-                <div class="email d-flex align-items-center">
+                <div class="email d-flex align-items-center mt-4">
                     <div class="icon-email">
-                        <h1><i class="bi bi-envelope text-orange"></i></h1>
+                        <img src="../../assets/img/icon/email.svg" alt="">
                     </div>
                     <div class="detail-email mx-2">
                         <li class="list-group-item fw-500">theyogasariseminyak01@gmail.com</li>
@@ -34,9 +35,9 @@
         </div>
         <div class="row d-flex justify-content-end">
             <div class="col-md-3 social-media px-0">
-                <span class="text-orange" style="font-size: 3em;"><i class="bi bi-facebook mx-3"></i></span>
-                <span class="text-orange" style="font-size: 3em;"><i class="bi bi-instagram mx-3"></i></span>
-                <span class="text-orange" style="font-size: 3em;"><i class="bi bi-youtube mx-3"></i></span>
+                <span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/fb.svg" alt=""></span>
+                <span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/ig.svg" alt=""></span>
+                <span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/yt.svg" alt=""></span>
             </div>
         </div>
         <div class="row d-flex justify-content-center text-orange text-center">
@@ -61,10 +62,6 @@ export default {
                 {
                     name: "Facilities",
                     link: "/facilities"
-                },
-                {
-                    name: "Review",
-                    link: "/review"
                 },
                 {
                     name: "Contact Us",

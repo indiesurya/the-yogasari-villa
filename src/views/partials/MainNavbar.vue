@@ -9,19 +9,19 @@
         </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Yogasari Villa</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Andong Village</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <router-link class="nav-link" aria-current="page" to="/">About Us</router-link>
+                <router-link class="nav-link mx-2" aria-current="page" to="/"><span >About Us</span> </router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" aria-current="page" to="/facilities">Facilities</router-link>
+                <router-link class="nav-link mx-2" aria-current="page" to="/facilities"><span>Facilities</span></router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" to="/contact">Contact Us</router-link>
+                <router-link class="nav-link mx-2" to="/contact"><span>Contact Us</span></router-link>
             </li>
             </ul>
         </div>
