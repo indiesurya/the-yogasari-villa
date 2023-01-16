@@ -35,9 +35,9 @@
         </div>
         <div class="row d-flex justify-content-end">
             <div class="col-md-3 social-media px-0">
-                <span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/fb.svg" alt=""></span>
-                <span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/ig.svg" alt=""></span>
-                <span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/yt.svg" alt=""></span>
+                <a href="https://www.linkedin.com/in/kadek-vincky-sedana-64261721b?originalSubdomain=id"><span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/fb.svg" alt=""></span></a>
+                <a href="https://www.instagram.com/vinckysdna/"><span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/ig.svg" alt=""></span></a>
+                <a href="https://www.youtube.com/channel/UCPvimy8JEkeOXkHOLCjT-cg/videos?view=0&sort=da"><span class="text-orange mx-2" style="font-size: 3em;"><img src="../../assets/img/icon/yt.svg" alt=""></span></a>
             </div>
         </div>
         <div class="row d-flex justify-content-center text-orange text-center">

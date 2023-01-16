@@ -284,14 +284,14 @@ textarea {
 .about-slider
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next{
-    left: 8%;
+    left: 8% !important;
         right: auto;
 }
        
 .about-slider
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev{
-    right: 8%;
+    right: 8% !important;
         left: auto;
 }
 

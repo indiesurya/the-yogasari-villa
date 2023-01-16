@@ -4,7 +4,7 @@
 <template>
   <div class="main-class">
     <!-- Jumbotron -->
-    <section id="jumbotron" style="margin-top: -100px; position: relative">
+    <section id="jumbotron" style="margin-top: -100px; position: relative" class="about-slider">
       <div class="welcome">
         Selamat Datang di Andong Village <br />
         <button class="btn btn-green p-3">
