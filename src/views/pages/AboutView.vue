@@ -8,9 +8,9 @@
       <div class="welcome">
         Selamat Datang di Andong Village <br />
         <button class="btn btn-green p-3">
-          <router-link class="nav-link" aria-current="page" to="/facilities"
+          <a class="nav-link" aria-current="page" @click="moveToVirtual"
             >Mulai Virtual Tour <i class="ml-2 fas fa-play-circle"></i>
-          </router-link>
+          </a>
         </button>
       </div>
 
@@ -102,6 +102,11 @@ export default {
       activeNavbar: "about",
     };
   },
+  methods:{
+    moveToVirtual(){
+      window.location = "http://127.0.0.1:5173/virtual.htm"
+    }
+  }
 };
 </script>
 
