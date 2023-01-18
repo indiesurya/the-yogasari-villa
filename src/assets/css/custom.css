@@ -299,3 +299,8 @@ textarea {
     border-radius: 50%;
     width: 80% !important;
 }
+
+.modal-dialog{
+    max-width: 100% !important;
+    width: 60%;
+}

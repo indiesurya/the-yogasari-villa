@@ -4,6 +4,23 @@
       <div class="title text-center">
         <h2 class="display-3">Facilities</h2>
       </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id="btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display:none;">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade w-100 h-100" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); height:80% max-width:100% !important; ">
+    <div class="modal-content" style="height:100%; border-radius:12px;">
+      <img src="src/assets/img/view/2.JPG" alt="" style=" border-radius:12px;" id="image-modal">
+    </div>
+  </div>
+</div>
       <div class="row justify-content-center image">
         <div
           class="col-md-2 bg-grey mx-1 mb-2 text-center align-items-center p-3"
@@ -58,6 +75,8 @@
                     alt=""
                     class="img-fluid"
                     style="border-radius: 10px"
+                    :data-image="image.url"
+                    v-on:-click="zoom"
                   />
                 </div>
               </swiper-slide>
@@ -71,6 +90,7 @@
       </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -169,7 +189,7 @@ export default {
     let indie = this.images.slice(0, 6);
     this.temp = this.images;
     this.images = indie;
-    console.log(this.show);
+
   },
   methods: {
     showmore() {
@@ -180,10 +200,16 @@ export default {
         let indie = this.images.slice(0, 6);
         this.images = indie;
         (this.icon = "fas fa-caret-square-up"), (this.show = "Less More");
-        console.log(this.show);
       }
       this.counter++;
     },
+    zoom: function(el){
+      let imageModal = el.currentTarget.dataset['image'];
+      let url = 'src/assets/img/view/' + imageModal;
+      console.log(url);
+      $('#btn-modal').click();
+      $('#image-modal')[0].src = 'src/assets/img/view/' + imageModal;
+    } 
   },
 };
 </script>
